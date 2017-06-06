@@ -44,7 +44,7 @@ build-packages:
     --plugin-option=tmpfs:required_ram_mb=39800 --verbose
   mock_binary: /usr/bin/mock
   packages: []
-  packages_metadata_repo_branch: master
+  packages_metadata_repo_branch: "v1.5.0"
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
@@ -53,7 +53,7 @@ build-packages:
   update_packages_repos_before_build: true
 build-release-notes:
   commit_updates: true
-  packages_metadata_repo_branch: master
+  packages_metadata_repo_branch: "v1.5.0"
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
@@ -69,14 +69,14 @@ build-release-notes:
 host_os:
   architecture: ppc64le
   distro_name: CentOS
-  distro_version: '7'
+  distro_version: "7.2"
   http_proxy: ''
   log_size: 2097152
   verbose: false
   work_dir: workspace
 update-metapackage:
   commit_updates: true
-  packages_metadata_repo_branch: master
+  packages_metadata_repo_branch: "v1.5.0"
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
@@ -90,7 +90,7 @@ update-metapackage:
 update-versions:
   commit_updates: true
   packages: []
-  packages_metadata_repo_branch: master
+  packages_metadata_repo_branch: "v1.5.0"
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
